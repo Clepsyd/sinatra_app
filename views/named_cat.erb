@@ -1,0 +1,11 @@
+<div>
+  <img style='border: 6px dotted purple; padding: 5px' = src='https://i.pinimg.com/originals/15/94/d3/1594d36f955a3c960dcc8d631db33b09.jpg'>
+</div>
+<% if @name %>
+  <h1>My name is <%= @name %></h1>
+<% else %>
+  <form action="/named-cat" method="get">
+    <input type="text" name="name" id="name" placeholder="Give me a name, I'm cute!" autofocus>
+    <input type="submit" value="Name me!!">
+  </form>
+<% end %>
